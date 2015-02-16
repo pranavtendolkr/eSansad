@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:primaryColor="#0056d3"
+                app:baseColor="#000"
+                app:errorColor="#ddaa00"
+                app:floatingLabel="highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="@string/proposal_title"
+                android:id="@+id/titleEditText"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:primaryColor="#0056d3"
+                app:baseColor="#000"
+                app:errorColor="#ddaa00"
+                app:floatingLabel="highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="@string/proposal_location"
+                android:id="@+id/locationTextView"
+                android:layout_gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:typeface="monospace"
+            android:singleLine="false"
+            android:layout_gravity="center_horizontal" />
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:primaryColor="#0056d3"
+                app:baseColor="#000"
+                app:errorColor="#ddaa00"
+                app:floatingLabel="highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="@string/proposal_description"
+                android:id="@+id/titleTextView"
+                android:layout_gravity="left"
+                android:padding="5dp"
+                android:typeface="monospace"
+                android:minLines="10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:primaryColor="#0056d3"
+                app:baseColor="#000"
+                app:errorColor="#ddaa00"
+                app:floatingLabel="highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="@string/proposal_estimate"
+                android:id="@+id/estimate"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:primaryColor="#0056d3"
+                app:baseColor="#000"
+                app:errorColor="#ddaa00"
+                app:floatingLabel="highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="@string/proposal_duration"
+                android:id="@+id/budget"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:baselineAligned="false">
+             <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                 android:layout_weight="1"
+                android:background="@color/button_material_dark"
+                android:id="@+id/imageView" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_image"
+                android:layout_weight="1"
+                android:id="@+id/upload"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_proposal"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

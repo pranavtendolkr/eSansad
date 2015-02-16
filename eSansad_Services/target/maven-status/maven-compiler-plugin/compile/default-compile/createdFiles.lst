@@ -1,0 +1,10 @@
+com\persistent\esansad\api\jaxb\RegisterUserRequest.class
+com\persistent\esansad\wink\WinkApplication.class
+com\persistent\esansad\api\jaxb\UserResponse.class
+com\persistent\esansad\api\jaxb\AuthenticateUserRequest.class
+com\persistent\esansad\dao\client\MongoDBClient.class
+com\persistent\esansad\api\jaxb\ObjectFactory.class
+com\persistent\esansad\models\User.class
+com\persistent\esansad\api\resources\UsersResource.class
+com\persistent\esansad\dao\util\MongoDBHelper.class
+com\persistent\esansad\dao\util\MongoDBConstants.class

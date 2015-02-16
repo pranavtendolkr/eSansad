@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.persistent.esansad"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter()
+
+    maven {
+        url "http://dl.bintray.com/journeyapps/maven"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services:6.5.87'
+
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    //Core
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.+'
+    //Optional for built-in cards
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.+'
+    //Optional for RecyclerView
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.+'
+    //Optional for staggered grid view
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.+'
+    //Optional for drag and drop
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.+'
+    //Optional for twoway  (coming soon)
+    //compile 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.0.1'
+    //Material design Navigation bar
+    compile 'br.com.liveo:navigationdrawer-material:1.0.3'
+    compile 'org.quanqi:mpandroidchart:1.7.5'
+    // Ion library for assyncronous calls
+    compile 'com.koushikdutta.ion:ion:2.+'
+
+    //library for tabs
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+
+    //barcode
+    compile 'com.journeyapps:zxing-android-embedded:2.0.1@aar'
+    compile  'com.journeyapps:zxing-android-legacy:2.0.1@aar'
+    compile 'com.journeyapps:zxing-android-integration:2.0.1@aar'
+    compile 'com.google.zxing:core:3.0.1'
+    compile 'com.rengwuxian.materialedittext:library:1.8.2'
+    compile 'com.github.navasmdc:MaterialDesign:1.+@aar'
+
+    //floating button
+    compile 'com.getbase:floatingactionbutton:1.7.0'
+
+
+}

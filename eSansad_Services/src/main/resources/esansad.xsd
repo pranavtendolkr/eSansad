@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:ref="http://ws-i.org/profiles/basic/1.1/xsd"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+	<xsd:complexType name="RegisterUserRequest">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="userEmail" type="xsd:string" />
+			<xsd:element minOccurs="0" name="userPassword" type="xsd:string" />
+			<xsd:element minOccurs="0" name="firstName" type="xsd:string" />
+			<xsd:element minOccurs="0" name="lastName" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="UserResponse">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="userEmail" type="xsd:string" />
+			<xsd:element minOccurs="0" name="firstName" type="xsd:string" />
+			<xsd:element minOccurs="0" name="lastName" type="xsd:string" />
+			<xsd:element minOccurs="0" name="apiKey" type="xsd:string" />
+			<xsd:element minOccurs="0" name="isReadOnly" type="xsd:boolean" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AuthenticateUserRequest">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="userEmail" type="xsd:string" />
+			<xsd:element minOccurs="0" name="password" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+ 
+</xsd:schema>

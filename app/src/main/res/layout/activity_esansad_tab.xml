@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.example.jeetendra_nayak.myapplication.EsansadTab"
+    tools:ignore="MergeRootFrame">
+
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        app:pstsDividerColor="#FF33B5E5"
+        app:pstsIndicatorColor="#FF33B5E5"
+        app:pstsTabPaddingLeftRight="14dip"
+        app:pstsUnderlineColor="#FF33B5E5"
+        app:pstsShouldExpand="true"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs" />
+
+
+</LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/addProposalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"/>
+
+
+
+</FrameLayout>
